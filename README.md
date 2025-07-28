@@ -70,3 +70,57 @@ This is a full-stack Personal Finance Tracker app that enables users to manage i
 
    ```bash
    cd backend
+
+ 2.  Install dependencies:
+```bash
+npm install
+
+3. Start the backend server
+```bash
+ node index.js
+Server runs at: http://localhost:5000
+
+### Frontend Setup
+ 1. Navigate to frontend folder:
+```bash
+cd frontend
+
+2. Install dependencies:
+```bash
+npm install
+
+3. Start frontend development server:
+ ```bash
+npm start
+Runs at: http://localhost:3000
+
+   API Documentation
+Swagger UI available at:
+  ```bash
+http://localhost:5000/api-docs
+Explore and test backend API endpoints interactively.
+
+
+Demo Credentials :
+
+| Role      | Email                                               | Password    |
+| --------- | --------------------------------------------------- | ----------- |
+| Admin     | [admin@example.com](mailto:admin@example.com)       | admin123    |
+| User      | [user@example.com](mailto:user@example.com)         | user123     |
+| Read-only | [readonly@example.com](mailto:readonly@example.com) | readonly123 |
+
+
+Performance & Caching
+Redis caches analytics data for 15 minutes and category lists for 1 hour
+
+Cache is invalidated automatically on data updates (create/edit/delete transactions)
+
+API response times reduced significantly due to caching (measured with Postman & backend logs)
+
+Rate limiting applied:
+
+Auth: 5 requests / 15 mins
+
+Transactions: 100 requests / hour
+
+Analytics: 50 requests / hour

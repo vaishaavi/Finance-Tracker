@@ -1,0 +1,16 @@
+.chart-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eef2f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.chart-section {
+  margin-bottom: 30px;
+}
+
+.chart-section h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
